@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+	<meta charset="UTF-8">
+	<title>ví dụ</title>
+</head>
+<body>
+	Đây là ví dụ <br>
+	
+	<!-- đây là cách cho ảnh trực tiếp khi cùng trong thư mục với file chính
+		<img src="anh_1.jpg" alt=""> -->
+	
+	<!-- đây là cách đi ra ngoài 1 thư mục (đi ra ngoài thêm ..  , đi vào thêm /) -->
+		<img src="../image1/anh_1.jpg" alt=""> <br>
+	<!-- ngoài ra còn có thể thêm link trực tiếp vào -->
+		<img src="http://www.fun88pro.net/wp-content/uploads/2017/05/gai-xinh-12-compressed.jpg" alt="">
+
+	Thẻ đường dẫn <br>
+
+		<a href="google.com">google</a> <br>
+		<!-- có thể thêm thuộc tính <blank>      <a href="google.com" target="blank">google</a> <br> -->
+
+	Thẻ chia khối <br>
+
+		<div>Đoàn Xuân Quyết</div> <br>
+
+	Thẻ đoạn văn <br>
+
+		<p>học HTML</p>
+			<!-- thẻ <p> là một thẻ chứa đoạn văn và tự động xuống dòng còn thẻ <div> tạo ra các khối để ta có thể sắp xếp được ở các vị trí khác nhau -->
+
+				
+	<!-- Thẻ <section></section> tạo một khối to chứa các <div></div> -->
+
+	<!--
+	Các thuộc tính liên quan đến nền và hình ảnh
++ bachground-image:-webkit-linear-gradient(left, red 0%, orange 50%, yellow 100%), hiệu ứng đổ màu gradient;
+
++ background-size: cover, để hình luôn đầy 100% khối;
+
++ background-attachment: fixed (cố đinh hình nền khi cuộn trang);
+
++ background-color: (màu nền) black;
+
++ background-image: url(imgage source), hình nền;
+
++ transform:scale(2), hiệu ứng zoom, phóng to thu nhỏ;
+
+ Các thuộc tính liên quan đến khối
++ margin và padding, biên tính từ viền của khối ra ngoài, lề tính từ viền khối vào bên trong nội dung
+
++ border : viền, 1px (độ dày) black (màu) solid (loại nét)
+
++ box-sizing: border-box, cố định chiều rộng và chiều cao
+
++ transform: rotate(-45deg) để xoay khối div góc 45 độ
+
++ border-radius: 5px; bo tròn các góc của khối với bán kính 5px
+
++ nth-child(3) để ghi đè css cho các đoạn giống nhau.
+
++ margin: auto, tự động canh biên
+
++ text-transform: uppercase, tự động viết hoa
+
++ box-shadow: 2px 2px 7px; tạo đổ bóng (các thông số lần lượt là đổ sang phải, bên dưới, độ rộng của bóng mờ)
+
++ float: left (right) dồn các khối
+
++ overflow: hidden
+
++ display: block, biến thẻ kh6ogn xuống dòng thành khối để hiểu được thuộc tính margin
+
++ display: inline, biến thành các thẻ không xuống dòng
+
+ Các thuộc tính liên quan đến chữ
++ transition: 0.4s; tùy chỉnh lại các hiệu ứng
+
++ text-align : canh lề
+
++ font-size : kích thước.
+
++ font-weight : bold độ đậm nhạt, giống như thẻ <b></b>
+
++ font-family : kiểu chữ hay font chữ
+
++ font-style: italic : tạo chữ in nghiêng
+
++ text-decoration: none, underline.
+
++ line-height: 20px: độ giãn dòng.
+
++ color: (màu chữ) dùng green, red hay mã màu
+
+ Các thuộc tính flexbox
+display: flex; hoặc display: inline-flex
+
+flex-direction :
+
++ row, theo hàng tương đương với float:left
+
++ row-reverse, theo hàng từ sau ra trước, float:right;
+
++ column, theo cột từ trên xuống dưới
+
++ column-reverse, theo hàng từ dưới lên trên.
+
+flex-wrap (có xuống dòng hay không khi đủ chiều rộng).
+
++ no-wrap: ko xuống dòng, chỉ hiện thị trên 1 hàng
+
++ wrap: đủ chiều rộng của khối cha thì tự động xuống dòng.
+
++ wrap-reverse: đảo ngược.
+
+justify-content:  canh chỉnh theo chiều ngang cho các khối bên trong
+
++ center: tự động căn giữa (tương đương text-align :center)
+
++ flex-start (dồn sang trái)
+
++ flex-end (dồn sang phải)
+
++ space-between ( chia đều trong khối)
+
++ space-around (chia đều các khối và hai lề của khối ngoài).
+
+align-items: canh chỉnh theo chiều dọc (khối bên ngoài phải có độ cao cố định)
+
++ stretch: tự lấp đầy chiều cao
+
++ flex-start: dồn lên trên
+
++ flex-end: dồn xuống dưới.
+
++ base-line: chỉ canh chữ cho thẳng hàng.
+
++ center: canh giữa theo chiều dọc. Thuộc tính này hỗ trợ rất nhiều cho việc làm web, và  là thuộc tính mới chỉ có từ CSS 3.
+
+ Các thuộc tính chia layer
++ position: relative; (chọn làm mốc)
+
++ position: absolute; (định vị trí cho khối, đi chung với các thuộc tính top, bottom, left, right)
+
++ top: 10px, vị trí tính từ trên xuống
+
++ bottom: 10px, vị trí tính từ dưới lên
+
++ left: 10px, vị trí từ bên trái
+
++ right: 10px, vị trí từ bên phải
+
+ Các thuộc tính tạo animation
+
+@-webkit-keyframes ten-animation{
+   from{ trạng thái đầu}
+   to{ trạng thái sau }
+}
++ Sử dụng animation cho đối tượng
+
+Thuộc tính tổng hợp: animation: tên-animation time forwards;
+
+Một số thuộc tính riêng
+
+animation-name: tên animation sẽ áp dụng cho đối tượng.
+
+animation-delay: thời gian hoãn animation;
+
+animation-iteration-count: số lầ thực hiện;
+
+aniamtion-direction: chiều chạy animation;
+
+animation-fill-mode: xác định trạng thái của một animation, khi mà animation không được chạy (có thể là animation này đã chạy xong hoặc đang bị delay).
+
+Những kiến thức cần biết thêm
+Về mảng front-end thiết kế giao diện
++ Bootstrap: giúp cho việc chia layout, responsive dễ dàng hơn.
+
++ Javascript và các thư viện, framework của nó như jQuery, ReactJS, AngularJS, VueJS: giúp tạo các tương tác, hiệu ứng như slide, chart, xử lý ngầm.
+
++ Kiến thức về thiết kế như Adobe photoshop, Illustrator, hay nâng cao hơn là Dreamweaver, Muse …
+
+Về mảng back-end
++ Các ngôn ngữ lập trình cho server
+
++ Kiến thức về cơ sở dữ liệu
+
+Tùy theo định hướng và nhu cầu, các bạn nên tìm hiểu, nghiên cứu thêm nhé
+	-->
+
+</body>
+</html>

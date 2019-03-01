@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.main{
+	width: 940px;
+	margin: auto;
+	overflow: hidden;
+	margin-top: 30px;
+	background-color: grey;
+		/*cach 2 dung display: flex; va lenh flex-wrap: wrap; de xuong dong khi khong du kioch thuoc*/
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+}
+/*css cho ca khoi*/
+.khoi{
+	width: 300px;
+	height: 300px;
+	padding: 5px;
+	margin: auto;
+	background-color: black;
+	box-sizing: border-box; /*Đóng khung đúng kích thước mà không phóng to hình không cần thiết
+	 cả border và hình chỉ trong kích thước khối qui định
+	Dù có thêm padding thì hình sẽ tự động thu nhỏ lại cho vừa với kích thước*/
+	position: relative;
+	overflow: hidden; /*không hiển thị những phần ngoài khối*/
+	margin-top: 50px;
+		/*cach 1 laf dung float va dinh dang khoi cuoi bang khoi:nth-child();*/
+							/*float: left;
+							margin-right: 20px;*/
+}
+
+	/*dinh dang rieng cho khoi
+	.khoi:nth-child(3n){ dinh dang rieng cho khoi thu 3, neu them (n) dang sau thi se hie la 3*n voi n =1,2,3.. 
+		margin-right: 0px;
+	}*/
+.khoi img{
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+	z-index: 1;
+}
+.khoi:hover img{
+	transform: scale(1.2); /*thuộc tính zoom scale(n) n là số lần phóng*/
+	transition: 1s;
+}
+.khoi:hover .layer{
+	opacity: 0.6;
+	transition: 0.6s;
+}
+.khoi .layer{
+	width: 300px;
+	height: 300px;
+	padding: 5px;
+	z-index: 2;
+	transition: 0.6s;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+			background-image: -webkit-linear-gradient(left,red 0%,orange 0%,yellow 100%);
+		/*	thuộc tính đầu tiên là mốc
+			Đồ màu lấy mốc bên trái (từ trái sang phải)
+			có thể lấy mốc bằng độ (45deg,orange 0%, yellow 100%)
+			từ màu cam 0% đến màu vàng 100%
+			có thể thêm các màu khác vào trong ngoặc*/
+									display: flex;
+									justify-content: center;
+									align-items: center;
+}
+.khoi .layer i{
+	font-size: 50px;
+	color: red;
+}

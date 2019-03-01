@@ -1,0 +1,10 @@
+@font-face{
+	src:url(font/helveticaneuemedium.ttf); /*tạo đường dẫn đến folder*/
+	font-family: helveticak; /*đặt tên cho font để sử dụng*/
+}
+.font{
+	font-family: helveticak;
+}
+.font_google{
+	font-family: 'Roboto', sans-serif; /*Cấu trúc sẵn trong google*/
+}

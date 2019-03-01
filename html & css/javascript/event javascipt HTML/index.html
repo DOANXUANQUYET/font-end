@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>gird system</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5">
+				
+
+
+				<!-- thêm event trực tiếp -->
+				<div class="classform-group mt-5">
+					<!-- event onkeyup : khi nhấn phím vào và gỡ phím ra thì sẽ nhận (vừa ghi vừa nhập)
+						  onchange : nhập vào và khi click ra ngoài thì sẽ nhập gíá trị
+						  onclick : xảy ra khi click vào thẻ HTML
+						  ondbclick : xảy ra khi click đúp đối tượng
+						  onmouseenter: onmouseover: xảy ra khi con trỏ chuột di chuyển và đối tượng
+						  onkeydown: xảy ra khi gõ một phism bất kì vào ô input
+
+
+						 -->
+					<input type="text" class="form-control" id="mes" onkeyup="xem_ket_qua()">
+				
+					<div class="mt-3" id="result"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="jquery-3.3.1.min 2.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript">
+		function xem_ket_qua() {
+			var input_text = document.getElementById('mes');
+			var result = document.getElementById('result');
+			//lấy giá trị của input_text
+
+			var text = input_text.value
+			//gán giá trị cho result 
+			result.innerHTML = text;
+		}
+	</script>
+</body>
+</html>

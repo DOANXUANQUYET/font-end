@@ -1,0 +1,79 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+body{
+
+	background-color: #f5f5f5;
+
+
+}
+.main{
+	background-color: #ffffff;
+	width: 1000px;
+	height: 250px;
+	margin: auto;
+	margin-top: 100px;
+	display: flex;/*viết trên khối cha thuộc tính display: flex; hoặc display:inline-flex; */
+	flex-direction: row;
+}
+.main1{
+	background-color: #ffffff;
+	width: 1000px;
+	height: 250px;
+	margin: auto;
+	margin-top: 100px;
+	display: flex;/*viết trên khối cha thuộc tính display: flex; hoặc display:inline-flex; */
+	flex-direction: row-reverse; /*Đảo ngược lại row*/
+}
+.main2{
+	background-color: #ffffff;
+	width: 1000px;
+	height: 250px;
+	margin: auto;
+	margin-top: 100px;
+	display: flex;/*viết trên khối cha thuộc tính display: flex; hoặc display:inline-flex; */
+	flex-direction: column; /*Đảo ngược lại row*/
+}
+.main3{
+	background-color: #ffffff;
+	width: 1000px;
+	height: 250px;
+	margin: auto;
+	margin-top: 300px;
+	display: flex;/*viết trên khối cha thuộc tính display: flex; hoặc display:inline-flex; */
+	flex-direction: column-reverse; /*Đảo ngược lại row*/
+}
+.main4{
+	background-color: #ffffff;
+	width: 1000px;
+	height: 250px;
+	margin: auto;
+	margin-top: 100px;
+	overflow: hidden;
+}
+.khoi{
+	background-color: red;
+	padding: 20px;
+	margin: 10px;
+}
+.khoi1{
+	background-color: red;
+	float: left;
+	padding: 20px;
+	margin: 10px;
+}
+.main5{
+	background-color: #ffffff;
+	width: 1000px;
+	height: 250px;
+	margin: auto;
+	margin-top: 100px;
+
+	/*Bộ thuộc tính*/
+	display: flex;/*viết trên khối cha thuộc tính display: flex; hoặc display:inline-flex; */
+	flex-direction: row;
+	justify-content: center; /*căn chỉnh chiều ngang ra giữa : flex-start(mặc định dồn từ bên trái) flex-end(dồn hết sang phài) space-between (trải đều ra sát 2 bên) space-aroud (trải đều không sát 2 bên)*/
+	align-items: center;	/*căn chỉnh chiều dọc ra giữa: flex-start(mặc định dồn từ trên xuống) flex-end(dồn từ dưới lên) baseline (căn chỉnh dãn đều cùng một hàng);
+}

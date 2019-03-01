@@ -1,0 +1,314 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.herder{
+	background-color: #ffffff;
+}
+#navbar{
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	height: 90px;
+	background-color: red;
+	font-size: 40px;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+}
+#navbar ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+}
+#navbar ul li{
+	list-style-type: none;
+}
+#navbar  ul li a{
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+	transition: 0.6s;
+}
+#navbar ul li:hover{
+	color: yellow;
+	transition: 0.6s;
+	font-size: 40px;
+}
+/*end navbar*/
+.header-khoi1{
+	width: 1680px;
+	height: 1050px;
+	background-image: url(image/nightcore_forgiven_anime_girl_ears_art_102632_1680x1050.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.header-khoi1 h1{
+	font-size: 100px;
+	color: #DCB593;
+	text-align: center;
+	background-color: transparent;
+	position: absolute;
+	z-index: 2;
+	top: 150px;
+	left: 5%;
+
+
+}
+.header-khoi1 .image{
+	z-index: 2;
+	width: 300px;
+	height: 150px;
+	background-color: white;
+	position: relative;
+	overflow: hidden;
+}
+.header-khoi1 .image a{
+	background-color: red;
+	z-index: 3;
+	font-size: 30px;
+	display: block;
+	height: 50px;
+	width: 100px;
+	position: absolute;
+	transform: rotate(-45deg);
+	top: -12px;
+	left: -33px;
+}
+/*end header-khoi1*/
+.header-khoi3{
+	z-index: 1;
+	width: 1680px;
+	height: 1050px;
+	background-image: url(image/girl_anime_grass_lying_art_107288_1680x1050.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+
+}
+
+#menu{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+
+ul li{
+	display: inline-block;
+	border: 1px solid red;
+	padding: 0 10px;
+	margin-right: 40px;
+	position: relative;
+	font-size: 25px;
+	background-color: red;
+  color: #3A0F25;
+}
+
+ul li ul{
+	position: absolute;
+	top: 38px;
+	left: 0;
+	display: none;
+}
+
+ul li ul li{
+	display: block;
+	background-color: #59194E;
+  color: white;
+  opacity: 0.5;
+	padding: 0 10px;
+	width: 100%;
+}
+  .penguin {
+    
+    /* change code below */
+    --penguin-skin: gray;
+    --penguin-belly: white;
+    --penguin-beak: orange;
+    /* change code above */
+    
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .penguin-top {
+    top: 10%;
+    left: 25%;
+    background: var(--penguin-skin, gray);
+    width: 50%;
+    height: 45%;
+    border-radius: 70% 70% 60% 60%;
+  }
+  
+  .penguin-bottom {
+    top: 40%;
+    left: 23.5%;
+    background: var(--penguin-skin, gray);
+    width: 53%;
+    height: 45%;
+    border-radius: 70% 70% 100% 100%;
+  }
+  
+  .right-hand {
+    top: 0%;
+    left: -5%;
+    background: var(--penguin-skin, gray);
+    width: 30%;
+    height: 60%;
+    border-radius: 30% 30% 120% 30%;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  
+  .left-hand {
+    top: 0%;
+    left: 75%;
+    background: var(--penguin-skin, gray);
+    width: 30%;
+    height: 60%;
+    border-radius: 30% 30% 30% 120%;
+    transform: rotate(-45deg);
+    z-index: -1;
+  }
+  
+  .right-cheek {
+    top: 15%;
+    left: 35%;
+    background: var(--penguin-belly, white);
+    width: 60%;
+    height: 70%;
+    border-radius: 70% 70% 60% 60%;
+  }
+  
+  .left-cheek {
+    top: 15%;
+    left: 5%;
+    background: var(--penguin-belly, white);
+    width: 60%;
+    height: 70%;
+    border-radius: 70% 70% 60% 60%;
+  }
+  
+  .belly {
+    top: 60%;
+    left: 2.5%;
+    background: var(--penguin-belly, white);
+    width: 95%;
+    height: 100%;
+    border-radius: 120% 120% 100% 100%;
+  }
+  
+  .right-feet {
+    top: 85%;
+    left: 60%;
+    background: var(--penguin-beak, orange);
+    width: 15%;
+    height: 30%;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(-80deg);
+    z-index: -2222;  
+  }
+  
+  .left-feet {
+    top: 85%;
+    left: 25%;
+    background: var(--penguin-beak, orange);
+    width: 15%;
+    height: 30%;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(80deg);
+    z-index: -2222;  
+  }
+  
+  .right-eye {
+    top: 45%;
+    left: 60%;
+    background: black;
+    width: 15%;
+    height: 17%;
+    border-radius: 50%; 
+  }
+  
+  .left-eye {
+    top: 45%;
+    left: 25%;
+    background: black;
+    width: 15%;
+    height: 17%;
+    border-radius: 50%;  
+  }
+  
+  .sparkle {
+    top: 25%;
+    left: 15%;
+    background: white;
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;  
+  }
+  
+  .blush-right {
+    top: 65%;
+    left: 15%;
+    background: pink;
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;  
+  }
+  
+  .blush-left {
+    top: 65%;
+    left: 70%;
+    background: pink;
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;  
+  }
+  
+  .beak-top {
+    top: 60%;
+    left: 40%;
+    background: var(--penguin-beak, orange);
+    width: 20%;
+    height: 10%;
+    border-radius: 50%;  
+  }
+  
+  .beak-bottom {
+    top: 65%;
+    left: 42%;
+    background: var(--penguin-beak, orange);
+    width: 16%;
+    height: 10%;
+    border-radius: 50%;  
+  }
+  
+  .penguin * {
+    position: absolute;
+  }
+
+
+
+
+
+
+
+
+
+
+
+

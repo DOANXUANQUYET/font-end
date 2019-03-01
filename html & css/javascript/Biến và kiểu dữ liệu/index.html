@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Biến và kiểu dữ liệu</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var bien_1 = 'hello JS'; alert(bien_1); //viết cùng một dòng thì phải dùng dấu ; để phân cách giữa các câu lệnh
+		// còn xuống dòng thì không cần
+		var bien_2 = 'hello Doan Xuan Quyet';
+		document.write(bien_2 + '<br>'); // + thêm <br> để xuống dòng
+		var bien_3 = 'ok ';
+		var bien_4 = bien_3 + bien_2;
+		document.write(bien_4 + '<br>');
+
+		//dùng lệnh number( ) để ép sang kiểu số
+
+		
+		//document.write(bien_3)
+		console.log(bien_3); //chạy ẩn dưới trình duyệt, khi chạy mở dưới nền cansole để kiểm tra
+
+		var name = prompt('nhập tên của bạn',''); //hàm prompt() cho phép hiện hộp thoại có ô nhập dữ liệu
+		alert(name);
+
+		confirm('Bạn có phải là' + name);
+
+		var x = 10;
+		function demo() {
+			var x = 9;
+			alert(x);
+		}
+		alert('gia tri cua x la:' + x)
+	</script>
+</body>
+</html>

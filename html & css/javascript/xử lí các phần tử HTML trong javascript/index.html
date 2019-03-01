@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>gird system</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+</head>
+<body>
+ 		<!-- truy xuât node từng thẻ HTML lấy thuộc tính -->
+
+ 		<input type="text" id="input_1" value="1" gia_tri="2"> <!-- có thể tự đặt thuộc tính ví dụ gia_tri  -->
+ 		<div class="mt-3" id="kq_input_1">DOAN XUAN QUYET</div>
+ 		<div id="infor"> DOAN XUAN QUYET</div>
+
+ 		<button class="btn btn-outline-danger" onclick="readOnly()">Set and only</button>
+ 		<div id="add_here">
+ 			
+ 		</div>
+
+ 		<!-- lấy css và thay đổi css -->
+
+ 		<div id="div_css" style="margin: 50px; width: 100px; height: 50px; background-color: red;"></div>
+	
+	<script type="text/javascript" src="jquery-3.3.1.min 2.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" >
+		var input_1 = document.getElementById('input_1'); 
+		var value_input_1 = input_1.value;
+		console.log(input_1.value);
+
+		var gia_tri_input_1 = input_1.getAttribute("gia_tri"); /*lấy giá trị từ thuộc tính đã thêm*/
+		console.log(gia_tri_input_1);
+
+			var div_input1 = document.getElementById('kq_input_1'); //chọ thẻ HTML có id là kq_input_1 để lấy nội dung
+			div_input1.innerHTML = value_input_1;  //hàm innerHTML lấy nội dung trong thẻ html đang được chọn
+
+			//có thể viết gộp lại
+			var div_input1_1 = document.getElementById('infor').innerHTML;
+			alert(div_input1_1);
+
+	</script>
+
+	<script type="text/javascript">
+		function readOnly() {
+			var input_1 = document.getElementById('input_1');
+			input_1.setAttribute("readOnly",true);
+
+		}
+	</script>
+
+	<script type="text/javascript">
+		var add_input = document.getElementById("add_here");
+		var h1 = document.createElement("h1");  //document.createElement("") hàm tạo thêm thành phần
+		h1.innerHTML = "Thẻ h1 vừa thêm vào";
+		alert(h1.innerHTML);
+		add_input.appendChild(h1);	// appendchild( ) hàm thêm thẻ con
+	</script>
+
+	<script type="text/javascript">
+		var div_css = document.getElementById("div_css");
+		var css = div_css.style.margin;
+		console.log(css);
+		div_css.style.backgroundColor = "blue";
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>gird system</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+</head>
+<body>
+
+									<!-- 	Các loại chuẩn màn hình
+									+ xs: extremely small – phone – chiều rộng màn hình nhỏ hơn 576px
+
+									+ sm: small – tablet- máy tính bảng  > 576px
+
+									+ md: medium – laptop  >768px
+
+									+ lg: large màn hình desktop > 992px
+
+									+ xl: extremely large màn hình lớn  > 1200px -->
+		<div class="container"style="background-color: grey; margin-bottom: 50px;">
+		<div class="row">
+			<div class="col-sm-8 col-md-6 col-xs-12" > 
+			<!-- có thể chia responsive theo kích thước màn hình
+				không ghi gì thì tự động chia 12 khi dưới 
+			 -->
+				<!-- tổng chia thành 12 khối bằng nhau, lần này chia 8-4 -->
+				<div class="khoi"></div>
+			</div>
+			<div class="col-sm-4 col-md-6 col-xs-12">
+				<div class="khoi"></div>
+			</div>
+		</div>
+	</div>	
+
+
+			<!-- + Nếu chỉ có 1 khối và không có số cột thì mặc định là 12 cột (full khối container).
+
+			+ Nếu bạn có 3 khối <div class=”col-md”> </div> thì sẽ tự động được chia đều như <div class=”col-md-4″> </div>. Vì như đã trình bày lúc đầu, Bootstrap 4 sử dụng flexbox.
+
+			+ Các màn hình có kích thước lớn hơn loại được sử dụng sẽ áp dụng giống, các màn hình nhỏ hơn sẽ tự động chuyển sang col-12 (một cột một hàng) nếu không có cài đặt riêng. -->
+
+	<div class="container"style="background-color: grey; margin-bottom: 50px;">
+		<div class="row">
+			<div class="col-sm-8" >
+				<!-- tổng chia thành 12 khối bằng nhau, lần này chia 8-4 -->
+				<div class="khoi"></div>
+			</div>
+			<div class="col-sm-4">
+				<div class="khoi"></div>
+			</div>
+		</div>
+	</div>	
+	<br>
+	<!-- container-fluid ==> full size -->
+	<div class="container-fluid" style="background-color: grey; margin-bottom: 50px;">
+		<div class="row">
+			<div class="col-sm-8"> 
+				<!-- tổng chia thành 12 khối bằng nhau, lần này chia 8-4 -->
+				<div class="khoi"></div>
+			</div>
+			<div class="col-sm-4">
+				<div class="khoi"></div>
+			</div>
+		</div>
+	</div>	
+
+
+
+	 <!-- content2 -->
+	<div class="container" style="background-color: grey; margin-bottom: 50px;">
+		<div class="row">
+			<div class="col-sm"> 
+				<!-- không để số thì chia đều , có thể thay đổi chỉ cần tổng bằng 12-->
+				<div class="khoi"></div>
+			</div>
+			<div class="col-sm">
+				<div class="khoi"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html

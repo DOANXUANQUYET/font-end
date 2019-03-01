@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>gird system</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row main"> <!-- định dạng đè lên class  -->
+			<div class="col-md-4">
+				<div class="alert alert-danger">Quay lai</div>
+				<div class="alert alert-info">infor</div>
+			</div>
+			<div class="col-md-5">
+				<nav aria-label="breadcrumb">  <!-- Đường dẫn-->	
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item active" aria-current="page"><a href="">Home</a></li>
+						<li class="breadcrumb-item active" aria-current="page"><a href="">About</a></li>
+
+			<!-- badge là thẻ nhỏ bổ sung thuộc tính cho thẻ bên cạnh -->
+						<li class="breadcrumb-item active" aria-current="page">Tell  <span class="badge badge-info">New</span></li>
+
+
+					</ol>
+				</nav>
+			</div>
+			<div class="col-md-3">
+				<button class="btn btn-success">ok</button>
+			</div>
+
+		</div>
+	</div>
+	<div class="row main">
+		<div class="alert alert-warning alert-dismissible fade show" role="alert">
+			<strong>Holy guacamole!</strong> You should check in on some of those fields below.
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	</div>
+
+	
+
+
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

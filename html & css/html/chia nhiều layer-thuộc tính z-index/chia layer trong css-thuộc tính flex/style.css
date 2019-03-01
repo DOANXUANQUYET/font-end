@@ -1,0 +1,55 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: #f5f5f5;
+}
+body{
+	width: 800px;
+	height: 1000px;
+	background-color: #ffffff;
+	margin: auto;
+	margin-top: 50px;
+	padding: 50px;
+}
+
+.khoi-tin{
+	background-color: black;
+	width: 400px;
+	height: 700px;
+	margin: 50px 100px;
+}
+.khoi-tin h1{
+	color: #FFFFFF;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 10px;
+	padding-left: 30px;
+	background-color: grey;
+	text-transform: uppercase;
+	border-left: 10px solid red;
+}
+.khoi-anh{
+	width: 370px;
+	height: 230px;
+	position: relative;
+}
+.khoi-anh img{
+	width: 370px;
+	height: 230px;
+}
+.khoi-anh a{
+	display: block;
+	width: 370px;
+	height: 100px;
+	color: #FFFFFF;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 10px;
+	text-decoration: none;
+	background-color: #000000ba;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 0px; /*chỉnh vị trí bằng top bottom left right*/
+	left: 0px;
+}

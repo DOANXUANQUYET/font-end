@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai tap tong hop 01</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../../demo/bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+	<h1 id="ret"></h1>
+	<article class="header">
+		<div id="navbar">
+			<ul>
+				<li><a href="#"></a>Home</li>
+				<li><a href="#"></a>Blog</li>
+				<li><a href="#"></a>Discuss</li>
+				<li><a href="#"></a>About</li>
+				<li><a href="#"></a>Contact</li>
+			</ul>
+		</div>
+		<div class="header-khoi1">
+			<h1>WellCome Quyet Website</h1>
+			<div class="image">
+				<a href=""></a>
+				
+			</div>	
+			<div class="image">
+				<a href=""></a>
+				
+			</div>		
+			<div class="image">
+				<a href=""></a>
+				
+			</div>
+		</div>
+
+	<div>
+	
+
+		<ul id="menu">
+		<li><a style="text-decoration: none;" href="#ret">Home</a></li>
+		<li>product<i class="fas fa-angle-right"></i>
+			<ul>
+				<li>Shoes</li>
+				<li>Clothing</li>
+				<li>Accessories</li>
+				<li>Customise</li>
+			</ul>
+		</li>
+		<li>support<i class="fas fa-angle-right"></i>
+			<ul>
+				<li>Using our Site</li>
+				<li>Privacy and Security</li>
+				<li>Site Map</li>
+				<li>Mobile Apps</li>
+			</ul>
+		</li>
+		<li>Get connected<i class="fas fa-angle-right"></i>
+			<ul>
+				<li>Twitter</li>
+				<li>Instagram</li>
+				<li>Facebook</li>
+			</ul>
+
+		</li>
+		<li>COMPANY INFO<i class="fas fa-angle-right"></i>
+			<ul>
+				<li>About Us</li>
+				<li>Careers</li>
+				<li>press</li>
+				<li>PressAll Day Blog</li>
+			</ul>
+		</li>
+		<li>Language<i class="fas fa-angle-right"></i>
+			<ul>
+				<li>english</li>
+				<li>japan</li>
+				<li>vietnamese</li>
+				<li>chines</li>
+							</ul>
+		</li>
+		</ul>
+
+	</div>
+
+	<div class="penguin">
+  <div class="penguin-bottom">
+    <div class="right-hand"></div>
+    <div class="left-hand"></div>
+    <div class="right-feet"></div>
+    <div class="left-feet"></div>
+  </div>
+  <div class="penguin-top">
+    <div class="right-cheek"></div>
+    <div class="left-cheek"></div>
+    <div class="belly"></div>
+    <div class="right-eye">
+      <div class="sparkle"></div>
+    </div>
+    <div class="left-eye">
+      <div class="sparkle"></div>
+    </div>
+    <div class="blush-right"></div>
+    <div class="blush-left"></div>
+    <div class="beak-top"></div>
+    <div class="beak-bottom"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+	
+		<script type="text/javascript">
+			alert(" Only I can change my life. No one can do it for me");
+			alert(" DOAN XUAN QUYET, Hello world");
+		</script>
+
+
+
+
+
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+
+
+		<div class="header-khoi3">
+
+		</div>
+	</article>
+
+	<article class="main"></article>
+
+	<script type="text/javascript">
+        //chọn tất cả các thẻ li (con của thẻ ul có id= menu)
+        var li = document.querySelectorAll('ul#menu li');
+        //Duyệt tất cả các phần tử li đó
+        for(i=0; i < li.length; i++){
+            //và áp sự kiện click lên từng thẻ li
+            li[i].addEventListener('mouseover',function()
+            {
+                //chọn tất cả các thẻ ul con của thẻ li
+                var ulc = document.querySelectorAll('ul#menu li ul');
+                //Tiến hàn duyệt từng thẻ ul đó
+                for(j=0; j< ulc.length; j++){
+                    //css cho display = none
+                    ulc[j].style.display = 'none';
+                }
+                //chọn thẻ ul con của thẻ li vừa click
+                //this ở đây chính là đối tượng li vừa click
+                var child = this.getElementsByTagName('ul');
+                //nếu như có tồn tại ul con của li vừa click
+                if(child.length >=1){
+                    //tiến hành css display=block
+                    child[0].style.display = 'block';
+                }
+
+            });
+        }
+    </script>
+	
+</body>
+</html>
