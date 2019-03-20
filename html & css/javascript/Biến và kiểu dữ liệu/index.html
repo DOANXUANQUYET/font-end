@@ -16,11 +16,14 @@
 
 		//dùng lệnh number( ) để ép sang kiểu số
 
-		
+		//ham typeof de kiem tra kieu du lieu, tra ve kieu du lieu duoi dang string
+		var type = typeof(bien_3);
+
+		console.log(type);
 		//document.write(bien_3)
 		console.log(bien_3); //chạy ẩn dưới trình duyệt, khi chạy mở dưới nền cansole để kiểm tra
 
-		var name = prompt('nhập tên của bạn',''); //hàm prompt() cho phép hiện hộp thoại có ô nhập dữ liệu
+		var name = prompt('nhập tên của bạn','gia tri ban dau, co the de trong '); //hàm prompt() cho phép hiện hộp thoại có ô nhập dữ liệu, tham so thu 2 hien thi gia tri ban dau
 		alert(name);
 
 		confirm('Bạn có phải là' + name);

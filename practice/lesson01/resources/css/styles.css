@@ -1,0 +1,479 @@
+/* ------------------------------------------------------  ------------------------------------------------------  */
+/*  ------------------------------------------------------ DEFAULT SETUP  ------------------------------------------------------ */
+/* ------------------------------------------------------  ------------------------------------------------------  */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    /* mac dinh la 16px */
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    /* cach hien thi chu len tren web */
+    text-rendering: optimizeLegibility;
+}
+
+/* ------------------------------------------------------(cau truc tai su dung) ------------------------------------------------------  */
+/* ------------------------------------------------------  REUSABLE COMPONENT  ------------------------------------ */
+/* ------------------------------------------------------  ------------------------------------------------------  */
+
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: #e67e22;
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin: 0 5px;
+    width: 190px;
+    display: inline-block;
+    text-align: center;
+    transition: all .3s;
+
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #d35400;
+}
+
+/* xoa anh huong cua float */
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+h1,h2,h3{
+    text-transform: uppercase;
+    /* khoang cach giua cac chu cai*/
+    letter-spacing: 1px;
+}
+
+h1{
+    font-size: 300%;
+    font-weight: 400;
+    /* khoang cach giua cac tu */
+    word-spacing: 5px;
+    color: white;
+    /* khoang cach giua cac dong */
+    line-height: 135%;
+    margin-bottom: 50px;
+}
+
+h2{
+    color: #e67e22;
+    font-size: 180%;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2::after{
+    content: " ";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: rgba(230, 126, 34,0.5);
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+h3{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #265077;
+    color: white;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.p-long{
+    text-align: center;
+    color: #265077;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+section{
+    padding: 50px;
+}
+
+.small-icon{
+    color: #d684cf;
+    font-size: 130%;
+    margin-right: 10px;
+
+}
+
+/* ------------------------------------------------------  ------------------------------------------------------  */
+/* ------------------------------------------------------ HEADER ------------------------------------------------  */
+/* ------------------------------------------------------  ------------------------------------------------------  */
+
+header{
+    /* linear-gradient([huong chuyen mau]to right top,[mau][phan tram],[mau]) */
+    background-image: linear-gradient(45deg,rgba(38,80,119,0.8),rgba(2,33,64,0.8),rgba(73,75,104,0.8),rgba(30,66,88,0.83),rgba(45,95,93,0.85)), url("../img/background4.jpeg");
+    /* bao phu toan bo phan hearder */
+    background-size: cover;
+    background-position: center;
+    /* view hight (% dao dien webside theo chieu cao) */
+    height: 100vh;
+    /* giu hinh anh co dinh khi cuon */
+    background-attachment: fixed;
+
+
+}
+.logo{
+    width: 350px;
+    float: left;
+    margin-top: -50px;
+}
+
+.main-nav{
+    float: right;
+    /* xoa hieu ung  cua the list nhu ki hieu dau dong */
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 55px;
+}
+
+.main-nav li{
+    /* hien thi tren cung mot hang, the a mac dinh la block */
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.main-nav li a{
+    /* xoa gach chan cua the a */
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+    font-weight: 700;
+    /* set thoi gian chuyen canh */
+    transition: border-bottom 0.5s;
+    padding: 3px 0;
+}
+
+.main-nav li a:hover,/* hover la di chuot qua, active la da click chuot*/
+.main-nav li a:active{
+    border-bottom: 2px solid #cccccc;
+}
+
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.heading-main-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%,-55%);
+    width: 1140px;
+}
+
+/* ------------------------------------------------------  ------------------------------------------------------  */
+/* -------------------------------------------------ABOUT SECTION ------------------------------------------------  */
+/* ------------------------------------------------------  ------------------------------------------------------  */
+.about-picture{
+    position: relative;
+    margin-top: 50px;
+}
+.about-picture img{
+    width: 90%;
+    border-radius: 20px;
+    border: 4px solid #b4d6f5;
+    /* tao bong cho hop, [x][y][do mo][do rong] */
+    box-shadow: 0px 5px 15px 5px #265077;
+    /* lam mo anh blur(do mo) brightness(do sang)*/
+    /* filter: brightness(55%) blur(2px); */
+    transition: all 0.7s;
+}
+
+/* tao hieu ung tieu de */
+.picture-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #b4d6f5;
+    transform: translate(-65%,100%);
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.about-picture:hover img,
+.about-picture:active img{
+    filter: brightness(55%) blur(2px);
+}
+
+.about-picture:hover .picture-title,
+.about-picture:active .picture-title{
+    transform: translate(-65%,-50%);
+    opacity: 1;
+}
+
+/* ------------------------------------------------------  ------------------------------------------------------  */
+/* -------------------------------------------------PRODUCT SECTION ------------------------------------------------  */
+/* ------------------------------------------------------  ------------------------------------------------------  */
+
+.product-section{
+    background-color: #f4f4f4;
+}
+
+.product-section h2{
+    margin-bottom: 60px;
+}
+
+.product-box{
+    background-color: #eeefff;
+    box-shadow: 3px 5px 10px #e0e0e0;
+    width: 90%;
+    height: 350px;
+}
+
+.product-price{
+    color: #265077;
+    font-size: 250%;
+    font-weight: 300;
+    text-align: center;
+}
+
+.product-price span{
+    font-size: 80%;
+}
+
+.product-box ul li{
+    margin-left: 20%;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.product-box .btn{
+    margin-left: 20%;
+}
+
+/* --------------------------------------------------( chung nhan )----------------------------------------------  */
+/* -------------------------------------------------TESTIMONIALS SECTION ------------------------------------------------  */
+/* ------------------------------------------------------  ------------------------------------------------------  */
+
+.testimonials-seciton{
+    background-image: linear-gradient(45deg,rgba(38,80,119,0.8),rgba(2,33,64,0.8),rgba(73,75,104,0.8),rgba(30,66,88,0.83),rgba(45,95,93,0.85)), url("../img/background2.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.testimonials-seciton h2{
+    margin-bottom: 70px;
+}
+
+blockquote{
+    position: relative;
+    width: 95%;
+    font-style: italic;
+    line-height: 140%;
+    color: white;
+}
+
+blockquote:before{
+    content: "\201C";
+    display: block;
+    font-size: 400%;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    top: -10px;
+}
+
+cite{
+    display: block;
+    color: #6b95bd;
+    margin-top: 25px;
+}
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #265077;
+    /* can giua theo chieu doc */
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.testimonials-seciton .row{
+    margin-bottom: 50px;
+}
+
+/* --------------------------------------------------( nguoi tai tro )----------------------------------------------  */
+/* -------------------------------------------------SPONSOR SECTION ------------------------------------------------  */
+/* ------------------------------------------------------  ------------------------------------------------------  */
+
+.sponsors-section{
+    background-color: #f4f4f4;
+}
+
+.sponsors-section h2{
+    margin-bottom: 50px;
+}
+
+.sponsors-showcase{
+    margin-left: 8%;
+
+}
+
+.sponsors-showcase li{
+    list-style: none;
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-sponsors{
+    width: 140px;
+    /* con tro chuot thanh hinh ban tay */
+    cursor: pointer;
+    transition: all .3s;
+}
+
+figcaption{
+    color: #265077;
+    font-weight: 900;
+    font-size: 120%;
+}
+
+.sponsors-showcase li .logo-sponsors:hover,
+.sponsors-showcase li .logo-sponsors:active{
+    /* phong to hinh */
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* ------------------------------------------------( form lien he )----------------------------------------------  */
+/* -------------------------------------------------  CONTACT FORM ------------------------------------------------  */
+/* ------------------------------------------------------  ------------------------------------------------------  */
+
+.contact-section{
+    background-image: linear-gradient(45deg,rgba(38,80,119,0.8),rgba(2,33,64,0.8),rgba(73,75,104,0.8),rgba(30,66,88,0.83),rgba(45,95,93,0.85)), url("../img/background5.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.information{
+    list-style: none;
+    color: white;
+    line-height: 200%;
+    margin-top: 70px;
+    word-spacing: 1px;
+    font-size: 95%;
+    transition: all 0.2s;
+}
+
+.information .small-icon:hover,
+.information .small-icon:active{
+    transform: scale(1.3);
+}
+
+.social-icon{
+    margin-top: 50px;
+    list-style: none;
+}
+
+.social-icon li{
+    display: inline-block;
+    font-size: 250%;
+    margin-left: 20px;
+    color: white;
+}
+
+.social-icon li i{
+    transition: all .3s;
+}
+
+.social-icon li i:hover,
+.social-icon li i:active{
+    transform: scale(1.3);
+    color: #e67e22;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝form===================== */
+form{
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-left: 40%;
+    width: 70%;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 130%;
+    color: white;
+}
+
+input,textarea{
+    /* khi click vao thi co vien xanh mac dinh, xoa mac dinh */
+    outline: none;
+    padding: 10px;
+    background-color: rgba(47, 48, 47, .4);
+    border:  1px solid  rgba(28, 28, 29, .3);
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input{
+    height: 50px;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+}
+
+/* chon phan tu cuoi cung trong form la div button */
+form .row:last-child{
+    text-align: center;
+}
+
+/* chon rieng input co kieu submit */
+input[type=submit]{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 100%;
+    border-radius: 5px;
+    width: 40%;
+}
+
+input[type = text], input[type = email], textarea{
+    width: 80%;
+    font-size: 100%;
+    transition: .3s;
+}
+/* khi chon con tro chuot vao nhap du lieu */
+input[type = text]:focus, input[type = email]:focus, textarea:focus{
+    color: white;
+    background-color: rgba(22, 22, 22, 0.8);
+}
+
+/* ------------------------------------------------( cuoi trang )----------------------------------------------  */
+/* -------------------------------------------------  FOOTER ------------------------------------------------  */
+/* ------------------------------------------------------  ------------------------------------------------------  */
+
+footer{
+    text-align: center;
+    background-color: #494949;
+    color: white;
+    padding: 20px;
+}
+
+

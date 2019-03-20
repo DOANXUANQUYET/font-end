@@ -1,0 +1,11 @@
+một số trang dùng trong font end
+
+ + (responsivefegrid)   
+	- http://www.responsivegridsystem.com/
+ + màu nền background 
+	- https://visme.co/blog/website-color-schemes/
+	- https://flatuicolors.com/
+ + wireframing, khung web
+	- https://uxmastery.com/wireframing-for-beginners/
+ + Một số kí tự đặc biệt trong html
+	- https://css-tricks.com/snippets/html/glyphs/
