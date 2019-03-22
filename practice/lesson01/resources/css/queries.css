@@ -1,0 +1,222 @@
+/* thuoc tinh max-width (khi co man hinh nho hon max-width thi thuc hien), min-width thi nguoc lai, khi man hinh lon hon min-width thi thuc thi */
+
+
+/* vi css se uu tien tu duoi len tren, max-width thi co man hinh to nhat luon code ben tren */
+
+
+/* screen tu 1024 - max */
+
+@media only screen and (max-width:1200px) {
+    html {
+        font-size: 16px;
+    }
+    .heading-main-box {
+        transform: translate(-30%, -50%);
+    }
+    form {
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (max-width:1023px) {
+    .logo {
+        width: 300px;
+        margin-left: 40px;
+    }
+    .main-nav {
+        margin-right: 15px;
+        margin-top: 40px;
+    }
+    .main-nav li {
+        margin-right: 10px;
+    }
+    .heading-main-box {
+        transform: translate(-20%, -50%);
+    }
+    .product-section .btn {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 30px;
+    }
+    .product-box {
+        width: 95%;
+        font-size: 98%;
+    }
+    h3 {
+        font-size: 120%;
+    }
+    .product-box ul li {
+        margin-left: 5%;
+    }
+    .product-box .small-icon {
+        margin-right: 5px;
+    }
+    .social-icon li {
+        margin-left: 10px;
+    }
+    .information li {
+        font-size: 14px;
+    }
+    .information i {
+        display: block;
+    }
+    input[type=submit] {
+        width: 55%;
+    }
+}
+
+
+/* screen tu 480 - 768 */
+
+@media only screen and (max-width:767px) {
+    /* hien thi thanh tung mang doc */
+    .col {
+        width: 100%;
+    }
+    /* lam thanh menu nav bien mat */
+    .main-nav {
+        /* cach 1 : 
+        visibility: hidden;
+        */
+        /* cach 2 
+        width: 0;
+        opacity: 0;
+        */
+        display: none;
+    }
+    .mobile-nav-icon {
+        display: block;
+    }
+    .sticky .logo {
+        margin-top: -40px;
+    }
+    .logo {
+        width: 350px;
+        margin-left: 15%;
+    }
+    h1 {
+        word-spacing: 2px;
+        font-size: 250%;
+    }
+    .heading-main-box {
+        transform: translate(-17%, -50%);
+    }
+    .about-section .row .p-long {
+        font-size: 20px;
+    }
+    .about-picture {
+        text-align: center;
+    }
+    .about-picture img {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .picture-title {
+        font-size: 15px;
+    }
+    .product-box {
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 15px;
+    }
+    .product-box ul li {
+        margin-left: 25%;
+    }
+    .testimonials-seciton .row .col {
+        margin-bottom: 50px;
+    }
+    figcaption {
+        visibility: hidden;
+    }
+    .sponsors-section .logo-sponsors {
+        width: 98px;
+    }
+    .information {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .information li {
+        font-size: 20px;
+    }
+    .social-icon {
+        text-align: center;
+    }
+    .social-icon li {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    form {
+        width: 80%;
+        margin-left: 10%;
+    }
+    label {
+        margin-left: 36%;
+    }
+}
+
+
+/* size screen 230 - 480 */
+
+@media only screen and (max-width:480px) {
+    html {
+        font-size: 12px;
+    }
+    .logo {
+        width: 300px;
+        margin-top: 20px;
+        margin-left: 12%;
+    }
+    .mobile-nav-icon {
+        right: 9%;
+        top: 124px;
+        font-size: 280%;
+    }
+    h1 {
+        font-size: 100%;
+    }
+    .heading-main-box {
+        font-size: 200%;
+        transform: translate(-11%, -50%);
+    }
+    .heading-main-box .btn {
+        display: block;
+        margin-bottom: 20px;
+        margin-left: 1%;
+        width: 18%;
+    }
+    .sponsors-section .logo-sponsors {
+        width: 68px;
+    }
+    .information li {
+        font-size: 14px;
+    }
+    .social-icon li {
+        font-size: 40px;
+    }
+    form {
+        width: 90%;
+        margin-left: 5%;
+    }
+    input,
+    textarea {
+        margin-left: 8%;
+    }
+    input[type=submit] {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .mobile-nav-icon {
+        right: 20%;
+        top: 186px;
+        font-size: 280%;
+    }
+    .sticky .mobile-nav-icon {
+        top: 66px;
+        margin-right: -15%;
+    }
+    .sticky .logo {
+        width: 60%;
+    }
+}

@@ -9,3 +9,9 @@ một số trang dùng trong font end
 	- https://uxmastery.com/wireframing-for-beginners/
  + Một số kí tự đặc biệt trong html
 	- https://css-tricks.com/snippets/html/glyphs/
+ + giảm dung lượng file css,html,javascript
+	- https://javascript-minifier.com/
+ + tạo favicoin(logo web)
+	- https://realfavicongenerator.net/
+ + tạo logo
+	- https://logomakr.com/

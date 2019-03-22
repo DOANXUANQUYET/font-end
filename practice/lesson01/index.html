@@ -6,43 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>selftaught</title>
+    <!-- favicons link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicons/site.webmanifest">
+    <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="resources/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <!--dung font awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!--dung goole font-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="resources/css/styles.css" />
     <link rel="stylesheet" href="vendors/css/grid.css">
+    <!-- chinh reponsive, link file reponsive luon phai nam phia duoi file style, load css truoc roi moi den reponsive -->
+    <link rel="stylesheet" href="resources/css/queries.css">
 </head>
 
 <body>
-    <header>
-        <a href="#"><img class="logo" src="./resources/img/logo.png" alt="logo"></a>
-        <ul class="main-nav">
-            <!-- unordered list-->
-            <li><a href="#">How Clients Think</a></li>
-            <!--list item-->
-            <li><a href="#">About</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <header id="home">
+        <nav>
+            <a href="#home"><img class="logo" src="./resources/img/logo.png" alt="logo"></a>
+            <ul class="main-nav">
+                <!-- unordered list-->
+                <li><a href="#testimonials">How Clients Think</a></li>
+                <!--list item-->
+                <li><a href="#about">About</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="fas fa-bars mobile-nav-icon"></i>
+        </nav>
         <!--xoa anh huong cua foalt-->
         <div class="clearfix"></div>
         <div class="row">
             <div class="heading-main-box">
                 <h1>We will study<br> English together.<br> So join with us.</h1>
-                <a href="#" class="btn">Tell Me more</a>
-                <a href="#" class="btn">Join us</a>
+                <a href="#about" class="btn">Tell Me more</a>
+                <a href="#product" class="btn">Join us</a>
             </div>
 
         </div>
     </header>
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="row">
             <h2>About Us</h2>
             <p class="p-long">
-                We are people that are studying English by ourselves, we believe that you don’t need to pay so much
-                money for being good at English, we’re here to help you
+                We are people that are studying English by ourselves, we believe that you don’t need to pay so much money for being good at English, we’re here to help you
             </p>
         </div>
         <div class="row">
@@ -72,7 +85,7 @@
             </div>
         </div>
     </section>
-    <section class="product-section">
+    <section class="product-section" id="product">
         <h2>Products</h2>
         <div class="row">
             <div class="col span-1-of-3">
@@ -110,15 +123,14 @@
             </div>
         </div>
     </section>
-    <section class="testimonials-seciton">
+    <section class="testimonials-seciton" id="testimonials">
         <h2>Testimonials</h2>
         <div class="row">
             <div class="col span-1-of-3">
                 <!-- dung de trich dan loi noi -->
                 <blockquote>
                     <!-- trich dan ten tac gia -->
-                    The course is very helpful, I can speak English fluently and I think The SF English became my second
-                    family, I love everyone very much. Thank you
+                    The course is very helpful, I can speak English fluently and I think The SF English became my second family, I love everyone very much. Thank you
                     <cite>
                         <img src="resources/img/person4.jpeg" alt="person1">
                         Nguyen Chem Gio
@@ -129,8 +141,7 @@
                 <!-- dung de trich dan loi noi -->
                 <blockquote>
                     <!-- trich dan ten tac gia -->
-                    I believe that who came to This English centre would love this place as I did, when the course
-                    finished, I feel sad because studying in that place I always felt funny
+                    I believe that who came to This English centre would love this place as I did, when the course finished, I feel sad because studying in that place I always felt funny
                     <cite>
                         <img src="resources/img/person1.jpeg" alt="person1">
                         Tran Vo Van
@@ -140,8 +151,7 @@
             <div class="col span-1-of-3">
                 <!-- dung de trich dan loi noi -->
                 <blockquote>
-                    Trust me, you can master English just by joining this class, I did, so I believe that you can too.
-                    Hope that one day, you can come and join in this class
+                    Trust me, you can master English just by joining this class, I did, so I believe that you can too. Hope that one day, you can come and join in this class
                     <!-- trich dan ten tac gia -->
 
                     <cite>
@@ -155,8 +165,7 @@
             <div class="col span-1-of-2">
                 <!-- dung de trich dan loi noi -->
                 <blockquote>
-                    All the members of this centre are my friends, I feel like I come home when going to this place for
-                    studying English, you will feel like me if you join in
+                    All the members of this centre are my friends, I feel like I come home when going to this place for studying English, you will feel like me if you join in
                     <!-- trich dan ten tac gia -->
 
                     <cite>
@@ -168,8 +177,7 @@
             <div class="col span-1-of-2">
                 <!-- dung de trich dan loi noi -->
                 <blockquote>
-                    Let’s start learning English easily by joining to SF English, you can see many friends there, see
-                    some incredible teachers, and met my lover there
+                    Let’s start learning English easily by joining to SF English, you can see many friends there, see some incredible teachers, and met my lover there
                     <!-- trich dan ten tac gia -->
 
                     <cite>
@@ -248,7 +256,7 @@
         </ul>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <div class="row">
             <div class="col span-1-of-3">
                 <ul class="information">
@@ -301,15 +309,14 @@
             </div>
         </div>
     </section>
-
-
-
-
     <footer>
         <p>
             Copyright &copy; 2018 by DOAN XUAN QUYET
         </p>
     </footer>
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
 
 </body>
 
