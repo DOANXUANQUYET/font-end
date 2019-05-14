@@ -1,0 +1,242 @@
+/* ==================================================================================================== */
+
+
+/* ================================== Default setup =============================================== */
+
+
+/* =================================================================================================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    /* mac dinh la 16px */
+    font-size: 18px;
+    color: #5a5a5a;
+    background-color: #f1ebeb;
+    /* cach hien thi chu len tren web */
+    text-rendering: optimizeLegibility;
+}
+
+
+/* ==================================================================================================== */
+
+
+/* ================================== Reusable componet =============================================== */
+
+
+/* =================================================================================================== */
+
+
+/* xoa anh huong cua float */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+section h1 {
+    color: rgb(218, 86, 65);
+    text-align: center;
+    font-weight: 700;
+    font-size: 200%;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+
+section h1::after {
+    background-color: rgb(218, 86, 65);
+    height: 3px;
+    display: block;
+    content: " ";
+    width: 200px;
+    margin: 0 auto;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.form-submit-button {
+    margin-top: 40px;
+    margin-left: 41%;
+    font-size: 30px;
+    width: 200px;
+    height: 60px;
+    background: #fff;
+    color: rgb(226, 114, 22);
+    border: 2px solid rgb(226, 114, 22);
+    border-radius: 20px;
+}
+
+.form-submit-button:hover {
+    background: rgb(226, 114, 22);
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+/* ==================================================================================================== */
+
+
+/* ================================== Header =============================================== */
+
+
+/* =================================================================================================== */
+
+header {
+    /* https://www.google.com/search?q=hoa+v%C4%83n+web+background&tbm=isch&tbs=rimg:CcVG6N8qhVsyIjggDrN0fgN0pKa1OL2NGBQRDH-OClTLbawp1Ylw4DJTr9g7iM77g5y1U3MKReEvlMQ1bRNpWQY2OSoSCSAOs3R-A3SkETc4zfAUl8HcKhIJprU4vY0YFBERsBRoCfdmQQwqEgkMf44KVMttrBHpgCSYLZauUSoSCSnViXDgMlOvEZZK96OIcNH0KhIJ2DuIzvuDnLURd8HGi0g47-QqEglTcwpF4S-UxBHFWonmVcAEQioSCTVtE2lZBjY5EZp2ui4Canfe&tbo=u&sa=X&ved=2ahUKEwit15ui--ThAhVWw4sBHaAUBV8Q9C96BAgBEBs&biw=1800&bih=965&dpr=1.6#imgrc=xUbo3yqFWzJdLM: */
+    background-image: linear-gradient(45deg, rgba(238, 225, 184, 0.6), rgba(215, 153, 34, 0.6), rgba(241, 60, 32, 0.6)), url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 100px;
+}
+
+header div {
+    padding: 10px;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+header .webId {
+    display: block;
+    text-decoration: none;
+    font-size: 40px;
+    width: 40%;
+    padding-top: 5px;
+    padding-left: 5%;
+    margin-bottom: 20px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+header div p {
+    position: absolute;
+    width: 1100px;
+    top: 175px;
+    left: 30%;
+    font-size: 25px;
+    font-weight: 700;
+    color: #504e36;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+/* *{
+    color: rgb(215, 153, 34);
+    color: rgb(238, 225, 184);
+    color: rgb(241, 60, 32);
+} */
+
+.nav {
+    margin-top: 30px;
+    width: 50%;
+    float: right;
+}
+
+.nav ul li {
+    float: left;
+    list-style: none;
+    font-size: 20px;
+    width: 24%;
+    padding: 5px;
+    /* margin-left: 39px; */
+}
+
+.nav li a {
+    text-decoration: none;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: rgb(222, 226, 230);
+    transition: border-bottom 0.5s;
+    display: inline-block;
+}
+
+.nav li a:hover,
+.nav li a:active {
+    border-bottom: 3px solid rgb(222, 226, 230);
+}
+
+
+/* ==================================================================================================== */
+
+
+/* ================================== form =============================================== */
+
+.form-contain {
+    height: 400px;
+    color: #050505;
+    font-weight: 500;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: rgba(36, 35, 35, 0.925) 5px 15px 5px;
+}
+
+.form-contain p {
+    margin: 10px;
+    padding: 8px;
+    color: rgb(238, 139, 225);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.form-contain p::after {
+    background-color: rgb(219, 80, 196);
+    height: 3px;
+    display: block;
+    content: " ";
+    margin-bottom: 20px;
+}
+
+.form-contain input[type="radio"] {
+    margin: 20px;
+}
+
+.form-contain input {
+    margin-left: 35px;
+}
+
+.form-contain input {
+    font-size: 180%;
+    background-color: rgba(230, 225, 225, 0.637);
+}
+
+
+/* =================================================================================================== */
+
+
+/* ==================================================================================================== */
+
+
+/* ================================== sample-about =============================================== */
+
+
+/* =================================================================================================== */
+
+
+/* ==================================================================================================== */
+
+
+/* ================================== Footer =============================================== */
+
+
+/* =================================================================================================== */
+
+footer p {
+    margin-top: 100px;
+    background-color: #314585;
+    color: antiquewhite;
+    text-align: center;
+    vertical-align: bottom;
+    height: 50px;
+    width: 100%;
+}

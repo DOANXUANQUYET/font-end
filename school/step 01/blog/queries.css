@@ -1,0 +1,115 @@
+/* thuoc tinh max-width (khi co man hinh nho hon max-width thi thuc hien), min-width thi nguoc lai, khi man hinh lon hon min-width thi thuc thi */
+
+
+/* vi css se uu tien tu duoi len tren, max-width thi co man hinh to nhat luon code ben tren */
+
+
+/* screen tu 1024 - max */
+
+@media only screen and (max-width:1200px) {
+    html {
+        font-size: 18px;
+    }
+    .nav li a {
+        font-size: 18px;
+    }
+    header div p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:1023px) {
+    html {
+        font-size: 14px;
+    }
+    header {
+        height: 40vh;
+    }
+    header .webId {
+        font-size: 44px;
+    }
+    header div p {
+        font-size: 14px;
+    }
+    .nav li a {
+        font-size: 12px;
+    }
+    article {
+        padding-left: 8%;
+        height: 750px;
+    }
+    aside {
+        padding-left: 8%;
+        height: 100px;
+    }
+}
+
+
+/* screen tu 480 - 768 */
+
+@media only screen and (max-width:767px) {
+    /* hien thi thanh tung mang doc */
+    header {
+        height: 30vh;
+    }
+    header .webId {
+        font-size: 30px;
+        /* margin-bottom: 20px; */
+    }
+    header div p {
+        font-size: 18px;
+    }
+    header div {
+        position: relative;
+        width: 100%;
+    }
+    .nav {
+        float: none;
+        width: 100%;
+    }
+    .nav li a {
+        font-size: 15px;
+    }
+    figure img {
+        width: 380px;
+        height: 280px;
+        margin-left: 13%;
+    }
+    footer p {
+        margin-top: 140px;
+    }
+    article {
+        padding-left: 4%;
+        height: 500px;
+    }
+    aside {
+        padding-left: 4%;
+        height: 100px;
+    }
+}
+
+
+/* size screen 230 - 480 */
+
+@media only screen and (max-width:480px) {
+    header .webId {
+        font-size: 40px;
+    }
+    .nav li a {
+        font-size: 12px;
+    }
+    html {
+        font-size: 12px;
+    }
+    figure img {
+        width: 320px;
+        height: 220px;
+        margin-left: 13%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header {
+        height: 30vh;
+    }
+}

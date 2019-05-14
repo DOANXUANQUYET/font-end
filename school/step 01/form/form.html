@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>染屋 問い合わせ</title>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- chia layout -->
+    <link rel="stylesheet" href="../grid.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="#" class="webId">問い合わせ</a>
+            <p><i>染屋に関しての質問や感想などありましたら下記のフォームより連絡をお願いします。</i></p>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li style="width:16%;"><a href="../index.html">HOME</a></li>
+                <li><a href="#">染物サンプル</a></li>
+                <li><a href="../blog/blog.html">染屋ブログ</a></li>
+                <li><a href="#">問い合わせ</a></li>
+                <div class="clearfix"></div>
+            </ul>
+        </nav>
+
+    </header>
+    <form action="javascript:func()" name="form1" method="POST" class="row">
+        <div class="col span-1-of-2 form-contain">
+            <p>氏名</p>
+            <input type="text" size="25" name="name1">
+            <p>E メール</p>
+            <input type="email" size="25" name="mail">
+        </div>
+        <div class="col span-1-of-2 form-contain">
+            <p>性別</p>
+            <input type="radio" name="sex" value="男性">男性
+            <input type="radio" name="sex" value="女性">女性
+            <p style="font-size : 21px;">興味がある染め物があればチェックしてかださい。</p>
+            <input type="radio" name="some" value="友禅">友禅
+            <input type="radio" name="some" value="和更紗">和更紗
+            <input type="radio" name="some" value="藍染め">藍染め
+        </div>
+        <input class="form-submit-button" type="submit" value="送信">
+    </form>
+    <footer>
+        <p>
+            <small> &copy;  染屋 Rights Reverved</small>
+        </p>
+    </footer>
+
+</body>
+
+</html>

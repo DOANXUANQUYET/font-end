@@ -1,0 +1,232 @@
+/* ==================================================================================================== */
+
+
+/* ================================== Default setup =============================================== */
+
+
+/* =================================================================================================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    /* mac dinh la 16px */
+    font-size: 24px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    /* cach hien thi chu len tren web */
+    text-rendering: optimizeLegibility;
+}
+
+
+/* ==================================================================================================== */
+
+
+/* ================================== Reusable componet =============================================== */
+
+
+/* =================================================================================================== */
+
+
+/* xoa anh huong cua float */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: rgb(218, 86, 65);
+    font-weight: 700;
+    font-size: 200%;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+h2::after {
+    background-color: rgb(218, 86, 65);
+    height: 3px;
+    display: block;
+    content: " ";
+    width: 161px;
+    margin-bottom: 20px;
+}
+
+
+/* ==================================================================================================== */
+
+
+/* ================================== Header =============================================== */
+
+
+/* =================================================================================================== */
+
+header {
+    /* https://www.google.com/search?q=hoa+v%C4%83n+web+background&tbm=isch&tbs=rimg:CcVG6N8qhVsyIjggDrN0fgN0pKa1OL2NGBQRDH-OClTLbawp1Ylw4DJTr9g7iM77g5y1U3MKReEvlMQ1bRNpWQY2OSoSCSAOs3R-A3SkETc4zfAUl8HcKhIJprU4vY0YFBERsBRoCfdmQQwqEgkMf44KVMttrBHpgCSYLZauUSoSCSnViXDgMlOvEZZK96OIcNH0KhIJ2DuIzvuDnLURd8HGi0g47-QqEglTcwpF4S-UxBHFWonmVcAEQioSCTVtE2lZBjY5EZp2ui4Canfe&tbo=u&sa=X&ved=2ahUKEwit15ui--ThAhVWw4sBHaAUBV8Q9C96BAgBEBs&biw=1800&bih=965&dpr=1.6#imgrc=xUbo3yqFWzJdLM: */
+    background-image: linear-gradient(45deg, rgba(238, 225, 184, 0.6), rgba(215, 153, 34, 0.6), rgba(241, 60, 32, 0.6)), url("../images/background2.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: 20vh;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+header div {
+    position: absolute;
+    padding: 10px;
+    width: 50%;
+}
+
+header .webId {
+    display: block;
+    text-decoration: none;
+    font-size: 50px;
+    padding-top: 5px;
+    padding-left: 5%;
+    margin-bottom: 20px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+header div p {
+    font-size: 20px;
+    color: #504e36;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+}
+
+
+/* *{
+    color: rgb(215, 153, 34);
+    color: rgb(238, 225, 184);
+    color: rgb(241, 60, 32);
+} */
+
+.nav {
+    margin-top: 30px;
+    width: 50%;
+    height: 150px;
+    float: right;
+}
+
+.nav ul li {
+    float: left;
+    list-style: none;
+    font-size: 25px;
+    width: 24%;
+    padding: 5px;
+    /* margin-left: 39px; */
+}
+
+.nav li a {
+    text-decoration: none;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: rgb(222, 226, 230);
+    transition: border-bottom 0.5s;
+    display: inline-block;
+}
+
+.nav li a:hover,
+.nav li a:active {
+    border-bottom: 3px solid rgb(222, 226, 230);
+}
+
+
+/* ==================================================================================================== */
+
+
+/* ================================== article  =============================================== */
+
+
+/* =================================================================================================== */
+
+article {
+    margin-top: 10px;
+    width: 100%;
+    height: 850px;
+    padding-left: 15%;
+    margin-bottom: 40px;
+}
+
+article p {
+    padding-left: 5%;
+    word-spacing: 10px;
+    line-height: 155%;
+}
+
+time {
+    margin-left: 4%;
+    color: white;
+    font-size: 80%;
+    background-color: hsla(0, 2%, 49%, 0.651);
+}
+
+figure {
+    width: 60%;
+}
+
+figure figcaption {
+    margin: 10px;
+    color: rgb(248, 121, 2);
+    font-weight: 500;
+    font-size: 120%;
+    text-transform: uppercase;
+    text-transform: initial;
+    text-align: right;
+}
+
+figure img {
+    width: 600px;
+    height: 500px;
+    margin-left: 13%;
+}
+
+
+/* ==================================================================================================== */
+
+
+/* ================================== aside =============================================== */
+
+
+/* =================================================================================================== */
+
+aside {
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    padding-left: 15%;
+}
+
+aside p {
+    margin-left: 5%;
+}
+
+
+/* ==================================================================================================== */
+
+
+/* ================================== Footer =============================================== */
+
+
+/* =================================================================================================== */
+
+footer p {
+    background-color: #314585;
+    color: antiquewhite;
+    text-align: center;
+    vertical-align: bottom;
+    height: 50px;
+    width: 100%;
+    margin-top: 100px;
+}
