@@ -1,0 +1,4 @@
+
+ width : calc(100% - 260px); tự động điều chỉnh kích thước và trừ 260px;
+
+ Box-sizing: border-box; khi thêm viền border hoặc điều chỉnh padding thì không tăng thêm kích thước của khối

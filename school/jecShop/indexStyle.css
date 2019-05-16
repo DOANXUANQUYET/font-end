@@ -1,0 +1,79 @@
+.left-content {
+    float: left;
+    margin: 20px;
+    width: 280px;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+.left-content li {
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    color: #ffffff;
+    background-color: rgb(248, 116, 134);
+    transition: 0.7s;
+}
+
+.left-content li:hover {
+    color: rgb(241, 241, 83);
+}
+
+.right-content {
+    float: right;
+    width: calc(93% - 280px);
+    background-color: #ffffff;
+    margin: 20px 35px 0px 10px;
+    border-top: 15px solid rgb(241, 88, 88);
+}
+
+.osusume {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.right-content .osusume p {
+    padding: 5px auto;
+    color: rgb(252, 236, 147);
+    background-color: rgb(241, 88, 88);
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    width: 400px;
+    text-align: center;
+}
+
+.right-content .product-card {
+    float: left;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 230px;
+    margin: 10px;
+    text-align: center;
+    font-family: arial;
+}
+
+.product-name {
+    font-weight: 500;
+    color: brown;
+    margin: 5px;
+    display: block;
+    transition: 0.8s;
+}
+
+.product-name:hover {
+    color: rgb(226, 43, 119);
+    font-weight: 600;
+    transform: scale(1.2);
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+    transition: 0.8s;
+}
+
+.price:hover {
+    text-decoration: underline;
+}
